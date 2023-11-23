@@ -1,3 +1,3 @@
-import DatePickerComponent from "./date-picker";
+import DatePickerComponent from "./DatePicker";
 
 export default DatePickerComponent;

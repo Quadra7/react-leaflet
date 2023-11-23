@@ -1,3 +1,3 @@
-import LayerSelector from './layer-selector';
+import LayerSelector from './LayerSelector';
 
 export default LayerSelector;

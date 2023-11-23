@@ -1,3 +1,3 @@
-import OverlaySelector from './overlay-selector';
+import OverlaySelector from './OverlaySelector';
 
 export default OverlaySelector;
