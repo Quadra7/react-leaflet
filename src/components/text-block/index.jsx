@@ -1,3 +1,3 @@
-import TextBlock from './TextBlock';
+import TextBlock from './text-block';
 
 export default TextBlock;
