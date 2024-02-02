@@ -1,3 +1,7 @@
-import App from './app';
+import Map from '../map';
 
-export default App;
+export default function App() {
+  return(
+    <Map />
+  )
+}
