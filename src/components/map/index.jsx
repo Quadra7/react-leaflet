@@ -82,15 +82,17 @@ export default function Map() {
             }
 
             <Location lat={form.lat} lng={form.lng} />
+            
+            <div disabled={form.isDialogActive}>
+                <MapContainer center={[53.405332, 107.673058]} zoom={form.zoom}>
+                    <GetCenter />
+                    <TileLayer url={layers[form.layer]} />
+                    <ScaleControl position='bottomleft' />
 
-            <MapContainer center={[53.405332, 107.673058]} zoom={form.zoom}>
-                <GetCenter />
-                <TileLayer url={layers[form.layer]} />
-                <ScaleControl position='bottomleft' />
-
-                {form.overlays['reserves'] && <GeoJSON data={reserves} style={{color: 'red'}} />}
-                {form.overlays['russia'] && <GeoJSON data={russia} />}
-            </MapContainer>
+                    {form.overlays['reserves'] && <GeoJSON data={reserves} style={{color: 'red'}} />}
+                    {form.overlays['russia'] && <GeoJSON data={russia} />}
+                </MapContainer>
+            </div>
         </>
     )
 }
