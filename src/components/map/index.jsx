@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useMapEvent } from 'react-leaflet';
+import { ZoomControl, useMapEvent } from 'react-leaflet';
 
 import DialogButton from '../dialog-button';
 import Dialog from '../dialog';

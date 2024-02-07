@@ -2,6 +2,10 @@
     height: 100vh;
 }
 
+.leaflet-control-attribution {
+    display: none;
+}
+
 div[disabled] {
     pointer-events: none;
     opacity: 0.9;
