@@ -26,7 +26,7 @@ export default function RecoveryForm() {
 
                 <div className='input-block'>
                     <label className='legend'>Email</label>
-                    <input type="text" value={email} onChange={onEmailChange} />
+                    <input type="text" value={email} onChange={onEmailChange} maxLength={50} />
                 </div>
 
                 <button className='button-login' onClick={Recovery}>Восстановить доступ</button>

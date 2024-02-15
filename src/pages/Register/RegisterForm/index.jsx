@@ -14,19 +14,19 @@ export default function RegisterForm() {
 
                 <div className='input-block'>
                     <label className='legend'>Имя</label>
-                    <input type="text" />
+                    <input type="text" maxLength={50} />
 
                     <label className='legend'>Фамилия</label>
-                    <input type="text" />
+                    <input type="text" maxLength={50} />
 
                     <label className='legend'>Отчество</label>
-                    <input type="text" />
+                    <input type="text" maxLength={50} />
 
                     <label className='legend'>Название организации</label>
-                    <input type="text" />
+                    <input type="text" maxLength={50} />
 
                     <label className='legend'>Email</label>
-                    <input type="text" />
+                    <input type="text" maxLength={50} />
 
                     <label className='legend'>
                         Прикрепите документ,<br/>

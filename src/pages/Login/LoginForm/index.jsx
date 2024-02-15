@@ -60,12 +60,14 @@ export default function LoginForm() {
                         type="text" 
                         placeholder='Email' 
                         value={form.email}
-                        onChange={onEmailChange}/>
+                        onChange={onEmailChange}
+                        maxLength={50}/>
                     <input 
                         type="password" 
                         placeholder='Пароль' 
                         value={form.password}
-                        onChange={onPasswordChange}/>
+                        onChange={onPasswordChange}
+                        maxLength={50}/>
                 </div>
 
                 <button
