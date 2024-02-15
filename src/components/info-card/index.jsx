@@ -12,7 +12,7 @@ export default function InfoCard() {
             <p>
                 E-mail: kav@racpod.siberia.net
             </p>
-            <a className='our-site' href='/'>Наш сайт</a>
+            <a className='our-site' href='https://rcpod.ru/'>Наш сайт</a>
         </div>
     );
 }
