@@ -1,0 +1,15 @@
+.logout-button {
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    color: #FFF;
+    background-color: red;
+    font-size: 16pt;
+    &:hover {
+        cursor: pointer;
+    }
+}

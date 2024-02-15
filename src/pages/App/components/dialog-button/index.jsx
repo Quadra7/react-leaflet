@@ -8,5 +8,5 @@ export default function DialogButton({isActive, ...props}) {
         >
             {isActive ? "X" : "?"}
         </button>
-    )
+    );
 }

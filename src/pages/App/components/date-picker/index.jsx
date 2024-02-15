@@ -12,7 +12,7 @@ const DatePickerComponent = () => {
                         onChange={(date)=> setStartDate(date)}
                         dateFormat={"dd/MM/yyyy"}/>
         </div>
-    )
+    );
 };
 
 export default DatePickerComponent;

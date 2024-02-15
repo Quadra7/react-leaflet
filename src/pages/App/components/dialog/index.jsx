@@ -82,5 +82,5 @@ export default function Dialog({layers, currLayer, changeLayer, overlays, currOv
             </div>
             
         </div>
-    )
+    );
 }

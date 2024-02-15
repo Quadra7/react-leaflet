@@ -1,19 +1,20 @@
 import { useState } from 'react';
 import { useMapEvent } from 'react-leaflet';
 
+import { MapContainer, TileLayer, ScaleControl, GeoJSON } from 'react-leaflet';
 import DialogButton from '../dialog-button';
 import Dialog from '../dialog';
 import Location from '../location';
-import { MapContainer, TileLayer, ScaleControl, GeoJSON } from 'react-leaflet';
+import LogoutButton from '../logout-button';
 
 import './style.css';
 import 'leaflet/dist/leaflet.css';
 
-import layers from '../../assets/layers';
-import overlays from '../../assets/overlays';
+import layers from '../../../../assets/data/layers';
+import overlays from '../../../../assets/data/overlays';
 
-import russia from '../../assets/russia-territory.json';
-import reserves from '../../assets/reserves.json';
+import russia from '../../../../assets/geojson/russia-territory.json';
+import reserves from '../../../../assets/geojson/reserves.json';
 
 export default function Map() {
     const [form, setForm] = useState({
@@ -27,7 +28,7 @@ export default function Map() {
         },
 
         isDialogActive: false
-    })
+    });
 
     const GetCenter = () => {
         const map = useMapEvent({
@@ -39,33 +40,33 @@ export default function Map() {
                     lng: newCenter.lng
                 }))
             }
-        })
+        });
         return null;
-    }
+    };
 
-    function changeDialogState() {
+    const changeDialogState = () => {
         setForm((prev) => ({
             ...prev,
             isDialogActive: !prev.isDialogActive
-        }))
-    }
+        }));
+    };
 
-    function changeLayer(newLayer) {
+    const changeLayer = (newLayer) => {
         setForm((prev) => ({
             ...prev,
             layer: newLayer
-        }))
-    }
+        }));
+    };
 
-    function changeOverlay(overlay) {
+    const changeOverlay = (overlay) => {
         setForm((prev) => ({
             ...prev,
             overlays: {
                 russia: overlay === 'russia' ? !prev.overlays.russia : prev.overlays.russia,
                 reserves: overlay === 'reserves' ? !prev.overlays.reserves : prev.overlays.reserves
             }
-        }))
-    }
+        }));
+    };
 
     return(
         <>
@@ -93,6 +94,8 @@ export default function Map() {
                     {form.overlays['russia'] && <GeoJSON data={russia} />}
                 </MapContainer>
             </div>
+
+            <LogoutButton />
         </>
-    )
+    );
 }
