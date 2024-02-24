@@ -10,11 +10,11 @@ import LogoutButton from '../logout-button';
 import './style.css';
 import 'leaflet/dist/leaflet.css';
 
-import layers from '../../../../assets/data/layers';
-import overlays from '../../../../assets/data/overlays';
+import layers from 'mapsData/layers';
+import overlays from 'mapsData/overlays';
 
-import russia from '../../../../assets/geojson/russia-territory.json';
-import reserves from '../../../../assets/geojson/reserves.json';
+import russia from 'geojson/russia-territory.json';
+import reserves from 'geojson/reserves.json';
 
 export default function Map() {
     const [form, setForm] = useState({

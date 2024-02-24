@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
-import background from '../../../assets/pictures/background.png';
+import background from 'pictures/background.png';
 
 export default function RecoveryForm() {
     const [email, setEmail] = useState('');

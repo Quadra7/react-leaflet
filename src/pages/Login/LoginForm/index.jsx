@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom';
 
 import { Cookies } from 'react-cookie';
 import { Link } from 'react-router-dom';
-import InfoCard from '../../../components/info-card';
+import InfoCard from 'commonComponents/info-card';
 
-import background from '../../../assets/pictures/background.png';
+import background from 'pictures/background.png';
 
 export default function LoginForm() {
     const navigateTo = useNavigate();

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import InfoCard from '../../../components/info-card';
+import InfoCard from 'commonComponents/info-card';
 
-import background from '../../../assets/pictures/background.png';
+import background from 'pictures/background.png';
 
 export default function RegisterForm() {
 
